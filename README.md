@@ -1,11 +1,18 @@
 # Synopsis
 
 ```prolog
-:- use_module(library(roman)).
-?-  % give one motivating example
+:- use_module(library(roman), [roman/2]).
+
+?-  roman(17,R).
+R = "XVII".
+
+?- roman(A,`XVII`).
+A = 17.
 ```
 
 # Description
+
+Work with Roman numerals.
 
 # Installation
 

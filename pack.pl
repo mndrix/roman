@@ -1,7 +1,9 @@
 name(roman).
-title('').
+title('Roman numerals').
+
 version('0.1.0').
 download('https://github.com/mndrix/roman/archive/v0.1.0.zip').
+
 author('Michael Hendricks','michael@ndrix.org').
 packager('Michael Hendricks','michael@ndrix.org').
 maintainer('Michael Hendricks','michael@ndrix.org').

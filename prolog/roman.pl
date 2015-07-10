@@ -2,9 +2,15 @@
 
 :- use_module(library(clpfd)).
 
+%% roman(?Arabic:integer,?Roman:codes).
+%
+%  True if Arabic has a Roman representation.
 roman(Arabic,Roman) :-
     phrase(dcg(Arabic),Roman).
 
+%% dcg(?Arabic:integer)//
+%
+%  Parse and generate Roman numerals.
 dcg(Arabic) -->
     { Arabic in 1..3999 },
     roman(Arabic),
